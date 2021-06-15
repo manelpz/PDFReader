@@ -37,6 +37,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return celda
     }
     
+    //get the value from the row, *** Argument label 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
+    
     
     
 }
