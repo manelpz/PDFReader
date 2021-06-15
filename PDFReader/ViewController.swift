@@ -34,6 +34,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let celda = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "Cell")
         celda.textLabel?.text = contenidoCeldas[indexPath.row]
         
+        //adding image
+        celda.imageView!.image = UIImage(named: "Libro2.jpeg")
+        
         return celda
     }
     
@@ -75,6 +78,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             tableView.reloadData()
         }
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
