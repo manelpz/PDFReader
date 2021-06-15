@@ -15,9 +15,14 @@ class ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        habilitarPDF()
         mostrarPDF()
         //Titulo.text = nombrePDFRecibido!
         // Do any additional setup after loading the view.
+    }
+    
+    func habilitarPDF(){
+        vistaWeb.scalesLargeContentImage = true
     }
     
     func mostrarPDF(){
