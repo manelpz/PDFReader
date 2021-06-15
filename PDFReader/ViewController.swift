@@ -62,7 +62,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                            let objPantalla2:ViewController2 = segue.destinationViewController as! ViewController2
                 objPantalla2.nombrePdfRecibido = contenidoCeldas[idx]
     }*/
-        
+    
+    //edit row
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    //remove row
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            contenidoCeldas.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
