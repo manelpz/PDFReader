@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-     var contenidoCeldas = ["Juan", "Emmanuel", "diego", "raul", "rosa"]
+     var contenidoCeldas = ["pdf1", "pdf2", "pdf3"]
     
     @IBOutlet var tabla: UITableView!
     
