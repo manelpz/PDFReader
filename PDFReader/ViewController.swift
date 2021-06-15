@@ -39,9 +39,45 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //get the value from the row, *** Argument label 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        
+        let idPDFSeleccionado = indexPath.row
+        
+        //adding value to segue
+        self.performSegue(withIdentifier: "SegundaPantallaSegue", sender: idPDFSeleccionado)
+        
     }
     
+    /*
+    //Primero convertir el sender a NSIndexPath
+    let idPdfSeleccionadoRecibido = sender as! NSIndexPath
+    
+    //Después crear otra variable para obtener el numero del row:
+    let idx = idPdfSeleccionadoRecibido.row
+    */
+    /*
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "pantallaDosSegue" {
+                let idPdfSeleccionadoRecibido = sender as! NSIndexPath
+                            let idx = idPdfSeleccionadoRecibido.row
+                           let objPantalla2:ViewController2 = segue.destinationViewController as! ViewController2
+                objPantalla2.nombrePdfRecibido = contenidoCeldas[idx]
+    }*/
+        
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "SegundaPantallaSegue"{
+            
+            let idPDFSeleccionadoRecibido = sender as! Int
+            
+            //print("value XX: \(idPDFSeleccionadoRecibido)")
+            //creating the obj for the pantalla2
+            let objPantalla2: ViewController2 = segue.destination as! ViewController2
+            
+            objPantalla2.nombrePDFRecibido = contenidoCeldas[idPDFSeleccionadoRecibido]
+ 
+        }
+    }
     
     
 }

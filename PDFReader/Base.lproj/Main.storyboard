@@ -61,17 +61,29 @@
             </objects>
             <point key="canvasLocation" x="-470" y="52"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="AoW-5f-teq">
             <objects>
-                <viewController id="VnY-CE-W4U" sceneMemberID="viewController">
+                <viewController id="VnY-CE-W4U" customClass="ViewController2" customModule="PDFReader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W9B-y9-Z8X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3h-iG-KyS">
+                                <rect key="frame" x="171" y="153" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rD9-dx-faS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="SHv-ae-dYC"/>
+                    <connections>
+                        <outlet property="Titulo" destination="x3h-iG-KyS" id="FxS-u5-9Kc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSo-6s-aAW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
