@@ -50,21 +50,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    /*
-    //Primero convertir el sender a NSIndexPath
-    let idPdfSeleccionadoRecibido = sender as! NSIndexPath
-    
-    //Después crear otra variable para obtener el numero del row:
-    let idx = idPdfSeleccionadoRecibido.row
-    */
-    /*
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "pantallaDosSegue" {
-                let idPdfSeleccionadoRecibido = sender as! NSIndexPath
-                            let idx = idPdfSeleccionadoRecibido.row
-                           let objPantalla2:ViewController2 = segue.destinationViewController as! ViewController2
-                objPantalla2.nombrePdfRecibido = contenidoCeldas[idx]
-    }*/
     
     //edit row
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
