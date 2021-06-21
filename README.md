@@ -3,5 +3,4 @@
 iOS App for read PDF files 📱
 
 ***
-
-![pdf1](https://user-images.githubusercontent.com/2387874/122805445-b93e7800-d28e-11eb-9ad3-b20697a96f20.gif)
+![pdf2](https://user-images.githubusercontent.com/2387874/122806104-88ab0e00-d28f-11eb-8026-34dff82cfcc0.gif)
