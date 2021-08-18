@@ -44,7 +44,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let idPDFSeleccionado = indexPath.row
-        
         //adding value to segue
         self.performSegue(withIdentifier: "SegundaPantallaSegue", sender: idPDFSeleccionado)
         
@@ -70,8 +69,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if segue.identifier == "SegundaPantallaSegue"{
             
             let idPDFSeleccionadoRecibido = sender as! Int
-            
-            //print("value XX: \(idPDFSeleccionadoRecibido)")
             //creating the obj for the pantalla2
             let objPantalla2: ViewController2 = segue.destination as! ViewController2
             
