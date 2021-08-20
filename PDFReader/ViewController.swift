@@ -48,8 +48,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.performSegue(withIdentifier: "SegundaPantallaSegue", sender: idPDFSeleccionado)
         
     }
-    
-    
+
     //edit row
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
@@ -63,7 +62,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "SegundaPantallaSegue"{
@@ -74,6 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             objPantalla2.nombrePDFRecibido = contenidoCeldas[idPDFSeleccionadoRecibido]
  
+            
         }
     }
     
