@@ -15,8 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+
         //Adding Relation bethween table with viewController, 2 ways to do this
         tabla.dataSource = self
         tabla.delegate = self
@@ -72,10 +71,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             objPantalla2.nombrePDFRecibido = contenidoCeldas[idPDFSeleccionadoRecibido]
  
-            
         }
     }
-    
-    
 }
 
